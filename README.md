@@ -21,11 +21,24 @@ He modificado el código del método main() para crear objetos de la clase corre
 	integrantes.add(iniesta);
 	integrantes.add(raulMartinez);
 	. . .
-```
-
 
 El ejercicio funciona correctamente, no hace falta crear objetos de la clase SeleccionFutbol para añadirlos al ArrayList:
 
 `public static ArrayList<SeleccionFutbol> integrantes = new ArrayList<SeleccionFutbol>();`
 
 Se pueden añadir al ArrayList si los objetos son de las clases hijas de SeleccionFutbol: Entrenador, Futbolista y Masajista.
+
+No hace falta hacer la conversión al llamar a los métodos propios de cada clase hija:
+
+// PLANIFICAR ENTRENAMIENTO
+//((Entrenador) delBosque).planificarEntrenamiento();
+delBosque.planificarEntrenamiento();
+
+// ENTREVISTA
+//((Futbolista) iniesta).entrevista();
+iniesta.entrevista();
+
+// MASAJE
+//((Masajista) raulMartinez).darMasaje();
+raulMartinez.darMasaje();
+```
