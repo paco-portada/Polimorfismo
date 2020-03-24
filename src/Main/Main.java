@@ -57,17 +57,20 @@ public class Main {
 		// PLANIFICAR ENTRENAMIENTO
 		System.out.println("\nPlanificar Entrenamiento: Solo el entrenador tiene el método para planificar un entrenamiento:");
 		System.out.print(delBosque.getNombre() + " " + delBosque.getApellidos() + " -> ");
-		((Entrenador) delBosque).planificarEntrenamiento();
+		//((Entrenador) delBosque).planificarEntrenamiento();
+		delBosque.planificarEntrenamiento();
 
 		// ENTREVISTA
 		System.out.println("\nEntrevista: Solo el futbolista tiene el método para dar una entrevista:");
 		System.out.print(iniesta.getNombre() + " " + iniesta.getApellidos() + " -> ");
-		((Futbolista) iniesta).entrevista();
+		//((Futbolista) iniesta).entrevista();
+		iniesta.entrevista();
 
 		// MASAJE
 		System.out.println("\nMasaje: Solo el masajista tiene el método para dar un masaje:");
 		System.out.print(raulMartinez.getNombre() + " " + raulMartinez.getApellidos() + " -> ");
-		((Masajista) raulMartinez).darMasaje();
+		//((Masajista) raulMartinez).darMasaje();
+		raulMartinez.darMasaje();
 
 	}
 }
